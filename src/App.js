@@ -1,6 +1,8 @@
 import React, {useEffect} from 'react'
+import Banner from './Components/Banner';
 import CoverVdeo from './Components/CoverVdeo'
 import FrontPageAnimation from './Components/FrontPageAnimation';
+import Header from './Components/Header';
 
 
 const App = () => {
@@ -11,7 +13,9 @@ const App = () => {
   return (
     <>
     <FrontPageAnimation />
+    <Header />
     <CoverVdeo />
+   
     </>
   )
 }

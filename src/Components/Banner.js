@@ -1,25 +1,22 @@
 import React from 'react'
 
-function banner() {
+function Banner() {
 	return (
 		<section className="main">
 			<div className="container">
-				<div className="ro">
+				<div className="row">
 						<h2>
 							<div className="line">
-								<span>Creating Unique Brands is</span>
+								<span>Welcome  To Creative</span>
 							</div>
 							<div className="line">
-								<span>is What we do</span>
+								<span>Mind</span>
 							</div>
 						</h2>
-						<div className="btn-row">
-							<a href="/">More About us</a>
-						</div>
 				</div>
 			</div>
 		</section>
 	)
 }
 
-export default banner
+export default Banner
