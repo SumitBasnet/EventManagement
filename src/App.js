@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import AboutCreative from './Components/AboutCreative';
 import Banner from './Components/Banner';
 import CoverVdeo from './Components/CoverVdeo'
 import FrontPageAnimation from './Components/FrontPageAnimation';
@@ -15,7 +16,7 @@ const App = () => {
     <FrontPageAnimation />
     <Header />
     <CoverVdeo />
-   
+    <AboutCreative />
     </>
   )
 }
