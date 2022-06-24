@@ -73,7 +73,7 @@ a {
   line-height: 4.2rem;
   font-weight: 600;
   color: white;
-  mix-blend-mode: differences;
+  mix-blend-mode: difference;
   z-index: 10;
 }
 
@@ -94,10 +94,11 @@ a {
 
 .line {
   margin-bottom: 8px;
-  height: 56px;
+  height: 60px;
   position: relative;
   overflow: hidden;
 }
+
 
 @media only screen and (max-width: 768px) {
   .line {
@@ -143,6 +144,14 @@ a {
   z-index: 1;
   position: relative;
 }
+
+/* @media only screen and (max-width: 1780px) {
+  .case-details {
+    width: 100%;
+  }
+} */
+
+
 
 @media only screen and (max-width: 768px) {
   .row {
@@ -205,4 +214,89 @@ a {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+/* //Intro Overlay  */
+.top {
+  height: 50vh;
+  height: calc(var(--vh, 1vh)* 50);
+  position: absolute;
+  width: 100%;
+  z-index: 8;
+}
+
+.overlay-top {
+  position: absolute;
+  height: 100%;
+  width: 33.33vw;
+  background: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .overlay-top {
+    width: 100vw;
+  }
+
+  .overlay-top:nth-child(2) {
+    display: none;
+  }
+
+  .overlay-top:nth-child(3) {
+    display: none;
+  }
+}
+
+.overlay-top:nth-child(2) {
+  left: 33.33%;
+}
+
+.overlay-top:nth-child(3) {
+  left: 66.66%;
+}
+
+.bottom {
+  height: 50vh;
+  height: calc(var(--vh, 1vh)* 50);
+  position: absolute;
+  width: 100%;
+  z-index: 8;
+  bottom: 0;
+}
+
+.overlay-bottom {
+  position: absolute;
+  height: 100%;
+  width: 33.33vw;
+  background: white;
+  bottom: 0;
+  right: 66.66%;
+}
+
+.overlay-bottom:nth-child(2) {
+  right: 33.33%;
+}
+
+.overlay-bottom:nth-child(3) {
+  right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .overlay-bottom {
+    right: 0;
+    width: 100vw;
+  }
+
+  .overlay-bottom:nth-child(2) {
+    width: 100vw;
+    top: 100%;
+    right: 0;
+  }
+
+  .overlay-bottom:nth-child(3) {
+    width: 100vw;
+    top: 100%;
+  }
 }

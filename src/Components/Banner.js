@@ -7,10 +7,11 @@ function Banner() {
 				<div className="row">
 						<h2>
 							<div className="line">
-								<span>Welcome  To Creative</span>
+								<span>Welcome  To Creative Mind 
+								</span>
 							</div>
 							<div className="line">
-								<span>Mind</span>
+							<span>Event Org.</span>
 							</div>
 						</h2>
 				</div>
