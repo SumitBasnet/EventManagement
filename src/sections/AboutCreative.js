@@ -1,4 +1,5 @@
 import React from 'react'
+import AboutUs from './AboutUs'
 
 const Services = [
 	{
@@ -43,6 +44,7 @@ const AboutCreative = () => {
 					</div>
 			</div>
 		</section>
+		<AboutUs />
 		</>
 	)
 }

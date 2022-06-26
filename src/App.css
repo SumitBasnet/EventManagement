@@ -97,6 +97,9 @@ a {
   height: 60px;
   position: relative;
   overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 
@@ -128,8 +131,8 @@ a {
   cursor: pointer;
 }
 
-.case-img:hover {
-  opacity: 0.4;
+.case-image:hover {
+  color: red
 }
 
 .case-details {
@@ -143,6 +146,9 @@ a {
   box-sizing: border-box;
   z-index: 1;
   position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 /* @media only screen and (max-width: 1780px) {
@@ -210,6 +216,10 @@ a {
   transition: .4s v=cubic-bezier(.6, -.05, .1, .99);
 }
 
+.case-img:hover {
+  opacity: 0.90;
+}
+
 .case-img img {
   height: 100%;
   width: 100%;
@@ -263,7 +273,7 @@ a {
   position: absolute;
   width: 100%;
   z-index: 8;
-  bottom: 0;
+  bottom: 100vh;
 }
 
 .overlay-bottom {
@@ -299,4 +309,14 @@ a {
     width: 100vw;
     top: 100%;
   }
+}
+
+.aboutUs {
+  height: 100vh;
+  background-color: black;
+}
+
+.footer {
+  height: 100vh;
+  background-color: black;
 }

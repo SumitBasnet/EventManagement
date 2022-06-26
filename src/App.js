@@ -1,12 +1,15 @@
 import React, {useEffect} from 'react'
-import AboutCreative from './Components/AboutCreative';
-import CoverVdeo from './Components/CoverVdeo'
+import AboutCreative from './sections/AboutCreative';
+import CoverVdeo from './sections/CoverVdeo'
 import Header from './Components/Header';
 import {LocomotiveScrollProvider} from 'react-locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css'
 import { useRef } from 'react';
 import IntroOverlayAnimation from './Components/IntroOverlayAnimation';
 import gsap from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import AboutUs from './sections/AboutUs';
+import Footer from './Components/Footer';
 
 
 const App = () => {
@@ -73,6 +76,7 @@ const App = () => {
     <Header />
     <CoverVdeo />
     <AboutCreative />
+    {/* <Footer /> */}
   </main>
 </LocomotiveScrollProvider>
     
