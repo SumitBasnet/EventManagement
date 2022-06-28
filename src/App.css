@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@1&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
-body{
+
+body {
   background-color: #F8F8FF;
 }
 
@@ -71,7 +73,7 @@ a {
   top: 90px;
   left: 200px;
   flex-direction: column;
-  
+
 }
 
 
@@ -107,7 +109,7 @@ a {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  
+
 }
 
 
@@ -321,59 +323,71 @@ a {
 
 .aboutUs {
   height: 100vh;
-  background-color: #F8F8FF;
+
 }
-.aboutContainer{
+
+.aboutContainer {
   width: 1440px;
   min-width: 1440px;
   margin: 0 auto;
 }
-.about-inner{
+
+.about-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 24px;
   height: 100vh;
 }
-.about-content{
+
+.about-content {
   width: 50%;
+  padding-bottom: 120px
 }
-.about-content-inner{
+
+.about-content-inner {
   width: 400px;
   margin: 0 auto;
   color: #323232;
 }
-.about-content-inner h1{
+
+.about-content-inner h1 {
   font-weight: 500;
   font-size: 32px;
   margin-bottom: 24px;
 }
-.about-content-line{
+
+.about-content-line {
   margin: 0;
   height: 44px;
   overflow: hidden;
 }
-.about-content-inner p{
-  font-size: 14px;
+
+.about-content-inner p {
+  font-size: 24px;
   line-height: 24px;
   font-weight: 30;
   padding-right: 48px;
   margin-bottom: 56px;
+  text-align: justify;
 }
-.btn-more{
+
+.btn-more {
   position: relative;
-  
+
 }
-.btn-more::before{
-    position: absolute;
-    content: '';
-    width:56px;
-    height: 1px;
-    background-color: #dfdfdf;
-    top: 50%;
-    left: -68px;
+
+.btn-more::before {
+  position: absolute;
+  content: '';
+  width: 56px;
+  height: 1px;
+  background-color: #dfdfdf;
+  top: 50%;
+  left: -68px;
 }
-.btn-more button{
+
+.btn-more button {
   background: none;
   border: none;
   font-size: 12px;
@@ -386,10 +400,12 @@ a {
   align-items: center;
   position: relative;
 }
-.btn-more button:focus{
+
+.btn-more button:focus {
   outline: none;
 }
-.arrow-right{
+
+.arrow-right {
   position: absolute;
   display: flex;
   align-items: center;
@@ -400,30 +416,35 @@ a {
   border-radius: 100px;
   left: 80px;
 }
-.about-images{
+
+.about-images {
   width: 50%;
   height: 100vh;
   position: relative;
- 
+
 }
-.about-image{
+
+.about-image {
   position: absolute;
   overflow: hidden;
-  
+
 }
-.img1{
+
+.img1 {
   top: 12px;
   right: 0;
   width: 45%;
   height: 50%;
 }
- .img2{
+
+.img2 {
   bottom: 20px;
   left: 0px;
   width: 52%;
   height: 65%;
 }
-.about-image img{
+
+.about-image img {
   position: absolute;
   top: 0;
   right: 0;
