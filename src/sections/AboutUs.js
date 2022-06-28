@@ -1,28 +1,10 @@
-import { TimelineLite, Power3 } from "gsap/gsap-core";
 import React from "react";
 import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
+gsap.registerPlugin(ScrollTrigger);
 
 const AboutUs = () => {
-  let images = useRef(null);
-
-  useEffect(() => {
-    //VARS IMAGES
-    const img1 = images.firstElementChild;
-    const img2 = images.lastElementChild;
-
-    let t1 = new TimelineLite();
-
-    t1.to(img1, {
-      x: 1280,
-      ease: Power3.ease,
-      scrollTrigger: {
-        trigger: ".img1",
-        start: "top center",
-      },
-    });
-  });
   return (
     <div className="aboutUs">
       <div className="aboutContainer">
@@ -60,7 +42,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="about-images">
-            <div className="about-images-inner" ref={(el) => (images = el)}>
+            <div className="about-images-inner">
               <div className="about-image img1">
                 <img src="/assets/images/Dummy-Aboutus.jpg" alt="" />
               </div>

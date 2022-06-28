@@ -10,6 +10,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import AboutUs from "./sections/AboutUs";
 import Footer from "./Components/Footer";
+import ScrollTriggerProxy from "./Components/ScrollTriggerProxy";
+import OurSpecilization from "./sections/OurSpecilization";
 
 const App = () => {
   useEffect(() => {
@@ -67,14 +69,14 @@ const App = () => {
         }
         containerRef={containerRef}
       >
+        <ScrollTriggerProxy />
         <main data-scroll-container ref={containerRef}>
           {/* ...your app */}
-          <IntroOverlayAnimation />
+          {/* <IntroOverlayAnimation />
           <Header />
           <CoverVdeo />
-          <AboutCreative />
-          {/* <Footer /> */}
-          {/* <AboutUs /> */}
+          <AboutCreative /> */}
+          <OurSpecilization />
         </main>
       </LocomotiveScrollProvider>
     </>
