@@ -12,6 +12,7 @@ import AboutUs from "./sections/AboutUs";
 import Footer from "./Components/Footer";
 import ScrollTriggerProxy from "./Components/ScrollTriggerProxy";
 import OurSpecilization from "./sections/OurSpecilization";
+import Testomonials from "./sections/Testomonials";
 
 const App = () => {
   useEffect(() => {
@@ -72,12 +73,12 @@ const App = () => {
         <ScrollTriggerProxy />
         <main data-scroll-container ref={containerRef}>
           {/* ...your app */}
-          <IntroOverlayAnimation />
+          {/* <IntroOverlayAnimation />
           <Header />
           <CoverVdeo />
           <AboutCreative />
-          {/* <OurSpecilization /> */}
-          {/* <Footer /> */}
+          <Footer /> */}
+          <Testomonials />
         </main>
       </LocomotiveScrollProvider>
     </>
