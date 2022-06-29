@@ -283,7 +283,7 @@ a {
   position: absolute;
   width: 100%;
   z-index: 8;
-  bottom: 100vh;
+  bottom: 200vh;
 }
 
 .overlay-bottom {
@@ -415,6 +415,7 @@ a {
   width: 42px;
   border-radius: 100px;
   left: 80px;
+
 }
 
 .about-images {
@@ -452,17 +453,137 @@ a {
   bottom: 0;
   width: 100%;
 }
-.div1{
+
+.specializationUs {
   height: 100vh;
-  background-color: pink;
-}
-.div2{
-  height: 100vh;
-  background-color: salmon;
-}
-.square{
-  height: 150px;
-  width:150px;
-  background-color: fuchsia;
+
 }
 
+.specializationContainer {
+  width: 1440px;
+  min-width: 1440px;
+  margin: 0 auto;
+}
+
+.specialization-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 24px;
+  height: 100vh;
+  flex-direction: row-reverse;
+  padding-left: 180px;
+}
+
+.specialization-content {
+  width: 50%;
+  padding-bottom: 120px
+}
+
+.specialization-content-inner {
+  width: 400px;
+  margin: 0 auto;
+  color: #323232;
+}
+
+.specialization-content-inner h1 {
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.specialization-content-line {
+  margin: 0;
+  height: 44px;
+  overflow: hidden;
+}
+
+.specialization-content-inner p {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 30;
+  padding-right: 48px;
+  margin-bottom: 56px;
+  text-align: justify;
+}
+
+.btn-more {
+  position: relative;
+
+}
+
+.btn-more::before {
+  position: absolute;
+  content: '';
+  width: 56px;
+  height: 1px;
+  background-color: #dfdfdf;
+  top: 50%;
+  left: -68px;
+}
+
+.btn-more button {
+  background: none;
+  border: none;
+  font-size: 12px;
+  padding: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .7px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.btn-more button:focus {
+  outline: none;
+}
+
+.arrow-right {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007fff;
+  height: 42px;
+  width: 42px;
+  border-radius: 100px;
+  left: 80px;
+}
+
+.specialization-images {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+
+}
+
+.specialization-image {
+  position: absolute;
+  overflow: hidden;
+
+}
+
+.img1 {
+  top: 12px;
+  right: 0;
+  width: 45%;
+  height: 50%;
+}
+
+.img2 {
+  bottom: 20px;
+  left: 0px;
+  width: 52%;
+  height: 65%;
+}
+
+.specialization-image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}

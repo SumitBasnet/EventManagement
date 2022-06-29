@@ -2,7 +2,6 @@ import React from "react";
 import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
-gsap.registerPlugin(ScrollTrigger);
 
 const AboutUs = () => {
   return (

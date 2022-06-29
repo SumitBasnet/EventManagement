@@ -1,5 +1,6 @@
 import React from "react";
 import AboutUs from "./AboutUs";
+import OurSpecilization from "./OurSpecilization";
 
 const Services = [
   {
@@ -42,6 +43,7 @@ const AboutCreative = () => {
         </div>
       </section>
       <AboutUs />
+      <OurSpecilization />
     </>
   );
 };

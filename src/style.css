@@ -1,0 +1,652 @@
+
+body{
+    font-family:sans-serif;
+    margin: 0;
+    padding:0;
+    font-family: 'Dosis', sans-serif;
+    background-color: #eeeeee;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+/*****navbar**********/
+nav{
+    background: rgb(20, 20, 20);
+    height: 80px;
+    width:100%;
+    z-index: 999; 
+    margin-top: -10px;
+}
+.logo{
+    color:rgb(255, 255, 255);
+    font-size: 35px;
+    line-height:80px;
+    padding: 0 100px;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+}
+nav .upper{
+    float: right;
+    margin-right: 20px;
+    margin-top: 0;
+}
+nav .upper .mid{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav .upper .mid .active,.prop{
+    color:white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+.active,.prop:hover{
+    background: rgb(80, 170, 221);
+    transition: .5s;
+}
+.sub-menu{
+    position: absolute;
+    background-color: rgb(20, 20, 20);
+    display: none;
+    z-index: 999;
+}
+nav .upper .mid:hover .sub-menu{
+    display: block;
+}
+nav .upper .mid:hover .sub-menu .mid{
+    display: block;
+    width: 200px;
+}
+h1{
+    font-size: 5.625rem;
+    font-family: 'Dosis', sans-serif;
+    color:#000000;
+    margin: auto;
+    text-align:center;
+}
+ul{
+    margin-bottom:0;
+}
+/******* EOF nav adjustment**********/
+
+/*******^*Main body**********/
+.container h2{
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+.container{
+    width:70%;
+    margin:0 auto;
+    padding-top: 10px;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.boxes .box{
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgb(0, 0, 0,.1);  
+    border-radius: 4px;  
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    flex: 30%;
+}
+
+
+.boxes .box .icon{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: 0.9s;
+    
+}
+.boxes .box:nth-child(1):hover .icon{
+    box-shadow: 0 0 0 400px #dd691b;
+}
+
+.boxes .box:nth-child(2):hover .icon{
+    box-shadow: 0 0 0 400px #1eaae2;
+}
+
+.boxes .box:nth-child(3):hover .icon{
+    box-shadow: 0 0 0 400px #eed813;
+}
+
+.boxes .box:nth-child(4):hover .icon{
+    box-shadow: 0 0 0 400px #3ad8ec;
+}
+
+.boxes .box:nth-child(5):hover .icon{
+    box-shadow: 0 0 0 400px #065ad8;
+}
+
+.boxes .box:nth-child(6):hover .icon{
+    box-shadow: 0 0 0 400px #a362d8;
+}
+.boxes .box .content{
+    position: relative;
+    z-index: 1;
+    transition: 0.1s;
+}
+.boxes .box:hover .content{
+    color: #fff;
+
+}
+.boxes .box .content h3{
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+.btn{
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    border: none;
+}
+.btn-send{
+    background: rgb(80, 170, 221);
+    color: #fff;
+}
+.btn-enroll {
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color:#000;
+}
+/*****EOF  Main body**********/
+
+/********Footer adjustment**********/
+footer{  
+    background: #303036;
+    color: #d3d3d3;
+    width:100%;
+    
+}
+footer .footer-content{
+    display:flex;
+}
+footer .footer-content .footer-section{
+    flex:1;
+    padding: 25px;
+    padding-bottom:0;
+}
+
+footer .footer-content h2{
+    color: white;
+}
+footer .footer-content .about .contact span{
+    display: block;
+    font-size: 1.1em;
+    margin-bottom:8px;
+}
+footer .footer-content .about .socials a{
+    color: grey;
+    width:45px;
+    padding-top:5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+}
+footer .footer-content .about .socials a:hover{
+    color:#3258a8;
+    transition: all 0.3s; 
+}
+footer .footer-content .about .socials a:nth-child(2):hover {
+    color:#00ACEE;
+}
+footer .footer-content .about .socials a:nth-child(3):hover {
+    color:#00ACEE;
+}
+footer .footer-content .about .socials a:nth-child(4):hover {
+    color:#FF0000;
+}
+footer .footer-content .about .socials a:nth-child(5):hover {
+    color:#E1306C;
+}
+footer .footer-content .links ul a{
+    text-decoration:none;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color:#d3d3d3;
+    display: block;
+}
+footer .footer-content .links ul a:hover{
+    color: white;
+    transition: all .3s;
+}
+footer .footer-content .contact-form .contact-input {
+    background: #272727;
+    color: #bebdbd;
+    line-height: 1.5rem;
+    padding: .3rem .8rem;
+    border: none;
+    width:230px;
+}
+
+footer .footer-bottom{
+    background: #343a40;
+    color: #686868;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+.form-group{
+    margin-bottom: 15px;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-checkbox{
+    -webkit-appearance: none;
+}
+/***** responsive footer**********/
+@media only screen and (max-width:600px){
+
+    .middle-container .box{
+        width:100%;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+    .container h1{
+        font-size: 1.625rem ;
+    }
+    .table-container h1{
+        font-size: 1.625rem;
+    }
+    footer .footer-content{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 2.625rem;
+    }
+}
+@media only screen and (max-width:970px){
+    .middle-container .box{
+        width:100%;
+    }
+    .container h1{
+        font-size: 1.625rem
+    }
+    footer .footer-content{
+        flex-direction: column;
+    }
+    .googlemap{
+        width: 100%;
+    }
+}
+
+/*****EOF footer adjustment and responsive**********/
+
+/********Login-Panel**********/
+.logbox{
+    padding: 40px;
+    margin-top: 10px;
+    text-align: center;
+    background: #f0eaea;
+    
+}
+.logbox h1{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.logbox input[type="text"],.logbox input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.logbox input[type="text"]:focus,.logbox input[type="password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+.logbox input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    border: 2px solid  #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.logbox input[type="submit"]:hover{
+    background:#2ecc71 ;
+}
+/*****Login panel responsive**********/
+@media only screen and (max-width:500px){
+    .logbox input[type="text"]:focus,.logbox input[type="password"]:focus{
+        width: 200px;
+    }
+    .logbox input[type="text"],.logbox input[type="password"]{
+        width: 100px;
+    }
+}
+@media only screen and (max-width:380px){
+    .logbox input[type="text"]:focus,.logbox input[type="password"]:focus{
+        width: 150px;
+    }
+    .logbox input[type="text"],.logbox input[type="password"]{
+        width: 75px;
+    }
+}
+@media only screen and (max-width:280px){
+    .logbox input[type="text"]:focus,.logbox input[type="password"]:focus{
+        width: 125px;
+    }
+    .logbox input[type="text"],.logbox input[type="password"]{
+        width: 75px;
+    }
+}
+
+/*****EOF Login-panel**********/
+
+/********Signup Page deco**********/
+input[type=text]{
+    width:50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+select{
+    width: 50%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px; 
+    background-color: #f1f1f1
+}
+input[type=password]{
+    width:50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+button[type=signup]{
+    background-color:rgb(80, 170, 221);
+    border: none;
+    color: #fff;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#subject{
+    width: 50%;
+}
+/*****EOF Signup page deco**********/
+
+
+
+/*****nav adjustment**********/
+nav .openmenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    float: right;
+    clear: right;
+    color: #fff;
+}
+nav .closemenu{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: #fff;
+}
+@media(max-width:908px){
+    nav .upper{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left:0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+        
+    }
+    nav .upper .closemenu{
+    display: block;
+    position: absolute;
+    top:20px;
+    right:50px;
+    }
+    nav .openmenu{
+        display: block;
+
+    }
+    nav .upper .mid .active,.prop:hover{
+        background: none;
+        color: #1eaae2;
+        font-size: 1.6rem;
+    }
+ 
+    
+}
+@media(max-width:440px){
+    nav .upper{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left:0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+        
+    }
+    nav .upper .closemenu{
+    display: block;
+    position: absolute;
+    top:20px;
+    right:50px;
+    }
+    nav .openmenu{
+        display: block;
+
+    }
+    nav .upper .mid .active,.prop:hover{
+        background: none;
+        color: #1eaae2;
+        font-size: 1.6rem;
+    }
+    .logo{
+        padding: 0 30px;
+    }
+}
+/*****close of nav adjustment**********/
+
+/**************Table**************************/
+.table-container{
+    width:70%;
+    margin:0 auto;
+    padding: 12px 16px;
+    padding-top: 10px;
+}
+.btn-2{
+    background: rgb(80, 170, 221);
+    color: #fff;
+}
+.btn-2:hover{
+    box-shadow: 0 8px 10px #05050533;
+}
+.overview tr td{
+    padding-top: 10px;
+}
+/*****************EOF Table****************/
+.profiles{
+    width:70%;
+    margin:0 auto;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    
+}
+.title{
+    color: grey;
+    font-size: 18px;
+}
+.btn-3{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+.contacts i{
+    margin: 4px;
+    font-size: 22px;
+    color: #000;
+}
+
+.profiles .card .contacts a:hover {
+    cursor: pointer;
+}
+.profiles .card .contacts a:nth-child(2) :hover {
+     color:#3258a8;
+}
+.profiles .card .contacts a:nth-child(3) :hover {
+    color:#00ACEE;
+}
+.profiles .card .contacts a:nth-child(4) :hover {
+    color:#0E76A8;
+}
+
+.btn-3:hover{
+    cursor: pointer;
+    background-color: #3498db;
+}
+
+
+/************** Testimonial of members *******/
+.owl-carousel .item{
+    background: #fff;
+    text-align: center;
+    color: #666;
+    border-radius: 3px;
+}
+.owl-carousel .item .testimonial {
+    padding: 20px;
+}
+.owl-carousel .item .testimonial img{
+    display: block;
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+.owl-carousel .item .testimonial p{
+    font-style: italic;
+    color: #666;
+}
+.owl-carousel .item .designation{
+    position: relative;
+    background:#D7DBDD ;
+    color: #000;
+    padding: 20px;
+}
+.owl-carousel .item .designation .fa-quote-left{
+    position: absolute;
+    top: -30px;
+    right: 25px;
+    font-size: 20px;
+    background:#fff;
+    color: #D7DBDD;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 3px 6px #00000059;
+}
+.owl-carousel .item .designation h3{
+    margin: 0 0 2px 0;
+}
+.owl-carousel .item .designation span{
+    font-size: 14px;
+}
+/****************** EOF testimonial ******************/
+
+#back-to-top-btn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid #333;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+    z-index: 1000;
+}
+
+#back-to-top-btn:hover, #back-to-top-btn:focus {
+    background-color: #333;
+    color: #fff;
+}
+
+/********* Map on about us ***********/
+.googlemap{
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 4px ;
+}
+/************EOF Map*****************/
