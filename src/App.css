@@ -648,7 +648,7 @@ footer .footer-content .links ul a:hover{
   transition: all .3s;
 }
 footer .footer-content .contact-form .contact-input {
-  background: #ccccff;
+  background: #e6e8fa;
   color: black;
   line-height: 1.5rem;
   padding: .3rem .8rem;
@@ -657,11 +657,12 @@ footer .footer-content .contact-form .contact-input {
 }
 
 footer .footer-bottom{
-  background: #ccccff;
+  background: #e6e8fa;
   color: #686868;
   text-align: center;
   padding: 20px;
   margin-top: 20px;
+  
 }
 .form-group{
   margin-bottom: 15px;
@@ -691,7 +692,6 @@ footer .footer-bottom{
   }
   footer .footer-content{
       flex-direction: column;
-      align-items: center;
   }
   h1{
       font-size: 2.625rem;
@@ -706,7 +706,6 @@ footer .footer-bottom{
   }
   footer .footer-content{
       flex-direction: column;
-      align-items: center;
   }
 }
 .btn{
@@ -716,6 +715,7 @@ footer .footer-bottom{
   font-weight: 500;
   box-shadow: 0 2px 5px rgba(0,0,0,.2);
   border: none;
+  cursor: pointer;
 }
 .btn-send{
   background: rgb(80, 170, 221);
@@ -727,6 +727,8 @@ footer .footer-bottom{
 .contact span{
   color: #2F4F4F;
 }
+
+/* Testomonial Section*/
 .testomonial-section{
   height: 700px;
   display: flex;
@@ -740,8 +742,8 @@ footer .footer-bottom{
   height: 550px;
   background: #f2f2f6;
   right: 0px;
-  bottom: 0;
-  opacity: .8;
+  bottom: 9;
+  opacity: .9;
   z-index: -10;
 }
 .testomonial-container{

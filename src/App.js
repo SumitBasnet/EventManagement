@@ -73,7 +73,7 @@ const App = () => {
         <ScrollTriggerProxy />
         <main data-scroll-container ref={containerRef}>
           {/* ...your app */}
-          {/* <IntroOverlayAnimation />
+          {/* ``          <IntroOverlayAnimation />
           <Header />
           <CoverVdeo />
           <AboutCreative />

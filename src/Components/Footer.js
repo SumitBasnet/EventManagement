@@ -18,7 +18,7 @@ const Footer = () => {
       <footer>
         <div className="footer-content">
           <div className="footer-section about">
-            <a className="logo"> hello </a>
+            <a className="logo"> Creative Mind Media </a>
             <p style={{ textAlign: "justify" }}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
               esse, quibusdam consequatur quos, fugit repellendus adipisci
