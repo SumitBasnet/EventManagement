@@ -777,7 +777,17 @@ footer .footer-bottom{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+}
+.t-image::after{
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #3f56da;
+  left: 140px;
+  top: 0;
+  border-radius: 100%;
+  z-index: -9;
 }
 .t-image ul{
   display: flex;
@@ -815,9 +825,7 @@ footer .footer-bottom{
   position: absolute;
   opacity: 0;
 }
-.t-content ul li:nth-child(1){
-  opacity: 1;
-}
+
 .testmonialContent-inner{
   width: 500px;
 }
@@ -840,5 +848,4 @@ footer .footer-bottom{
   letter-spacing: 0.88px;
   line-height: 28px;
   color: green;
-
 }
