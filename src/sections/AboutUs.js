@@ -19,17 +19,14 @@ const AboutUs = () => {
                 </div>
               </h1>
               <p>
-                Creative Mind Int. is the perfect choice when having to provide
-                a solution to all your event planning/coordinating requirements.
-                We provide services to clients with a customized event planning
-                and coordination service tailored and suited to every need.
+                Creative Mind Media & Event Pvt.Ltd. is the perfect choice when
+                having to provide a solution to all your event planning /
+                coordinating requirements. We provide services to clients with a
+                customized event planning and coordination service tailored and
+                suited to every need. At Creative Mind Int., we believe a
+                successful event is directly related to the guest experience.
               </p>
-              <p>
-                We understand that no two clients are the same and have created
-                an intimate boutique consultative environment, so as to approach
-                and develop new ideas and designs best suited to who and what
-                you stand for.
-              </p>
+
               <div className="btn-more">
                 <button className="explore-more">
                   Explore

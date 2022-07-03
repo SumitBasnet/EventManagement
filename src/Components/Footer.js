@@ -10,6 +10,7 @@ import {
   faPhone,
   faEnvelope,
   faPaperPlane,
+  faHome,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
@@ -27,8 +28,12 @@ const Footer = () => {
             </p>
             <div className="contact">
               <span>
+                <FontAwesomeIcon icon={faHome} className="fas fa-Phone" />
+                &nbsp; Baneshwor - 10, Kathmandu.
+              </span>
+              <span>
                 <FontAwesomeIcon icon={faPhone} className="fas fa-phone" />
-                &nbsp; 123-456-789
+                &nbsp; +977 9851080013
               </span>
               <span>
                 <FontAwesomeIcon
