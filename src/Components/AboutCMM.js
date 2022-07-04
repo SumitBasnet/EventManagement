@@ -1,4 +1,6 @@
 import React from "react";
+import GetInTouch from "../sections/GetInTouch.js";
+import OurTeam from "../sections/OurTeam.js";
 import Footer from "./Footer.js";
 
 const AboutCMM = () => {
@@ -8,9 +10,7 @@ const AboutCMM = () => {
         <div className="ourStory">
           <div className="contentourStory">
             <div className="textourStory">
-              <h1 style={{ fontSize: "80px" }} className="GradientHeading">
-                Our Story
-              </h1>
+              <h1 style={{ fontSize: "80px" }}>Our Story</h1>
               <p style={{ width: "90-%" }}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatibus accusantium error aperiam ipsum expedita. Debitis
@@ -58,9 +58,9 @@ const AboutCMM = () => {
             <img src="/assets/images/trophy.png" alt="ourStory" />
           </div>
         </div>
-        <div className="ourStory">
+        <div className="ourStory commitment-story">
           <div className="contentourStory commitment-content">
-            <div className="textourStory">
+            <div className="textourStory ">
               <h1>Our Commitment</h1>
               <p>
                 Creative Mind Media & Event Pvt.Ltd. is a full service lifestyle
@@ -86,9 +86,8 @@ const AboutCMM = () => {
           </div>
         </div>
       </div>
-      <div className="Team-banner">
-        <div className="team-contents"></div>
-      </div>
+      <OurTeam />
+      {/* <GetInTouch /> */}
       <Footer />
     </>
   );

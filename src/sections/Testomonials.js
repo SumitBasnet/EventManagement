@@ -50,9 +50,10 @@ const Testomonials = () => {
           slideShadows: true,
         }}
         modules={[EffectCoverflow, Pagination]}
+        className="TestomonialSwiper"
       >
         {TestomonialsData.map((currElm, indx) => (
-          <SwiperSlide>
+          <SwiperSlide className="testomonial-slider">
             <img src={currElm.image} alt={currElm.name} />
             <h3>{currElm.name}</h3>
             <p>{currElm.quote}</p>

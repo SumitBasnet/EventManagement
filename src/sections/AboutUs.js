@@ -12,10 +12,15 @@ const AboutUs = () => {
             <div className="about-content-inner">
               <h1>
                 <div className="about-content-line">
-                  <div className="about-content-line-innner">About </div>
+                  <div className="about-content-line-innner GradientHeading">
+                    About{" "}
+                  </div>
                 </div>
                 <div className="about-content-line">
-                  <div className="about-content-line-innner"> Us </div>
+                  <div className="about-content-line-innner GradientHeading">
+                    {" "}
+                    Us{" "}
+                  </div>
                 </div>
               </h1>
               <p>

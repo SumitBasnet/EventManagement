@@ -1,19 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Arvo', serif;
 }
 
 body {
   background-color: #F8F8FF;
 }
+.GradientHeading {
+  background: -webkit-linear-gradient(#014872, #D7EDE1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .textourStory h1{
   background: -webkit-linear-gradient(#83a4d4, #99d7da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
 .vid video {
@@ -735,13 +739,13 @@ footer .footer-bottom{
 
 /* Testomonial Section*/
 
-.swiper {
+.TestomonialSwiper {
   width: 100%;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-.swiper-slide {
+.testomonial-slider {
   display: grid;
   text-align: center;
   padding: 0.5rem 1rem;
@@ -750,7 +754,7 @@ footer .footer-bottom{
   height: 18.75rem;
 }
 
-.swiper-slide img {
+.testomonial-slider img {
   display: block;
   width: 6rem;
   justify-self: center;
@@ -793,6 +797,9 @@ footer .footer-bottom{
 .container-ourStory{
   width: 80%;
   margin: 0 auto;
+}
+.ourStory{
+  padding-bottom: 80px;
 }
 /*for data boxes */
 .datasboxes{
@@ -847,9 +854,46 @@ footer .footer-bottom{
 .commitment-content img{
   height: 450px;
 }
+
+/* -----------Team Content --------- */
 .Team-banner{
   width: 100%;
   background-color: #2F4F4F;
   height: 300px;
 
+}
+.team-contents{
+  padding: 20px;
+}
+.mySwiper{
+  background-image: linear-gradient(to right, #28313B, #484561);
+  height: 300px;
+  position: relative;
+  padding-bottom: 3rem;
+  margin-bottom: 20px;
+}
+.team-slider{
+  display: grid;
+  text-align: center;
+  color: white;
+  cursor: grab;
+}
+
+.team-slider img{
+  display: block;
+  width: 10rem;
+  justify-self: center;
+  clip-path: circle();
+  margin-top: 1.2rem;
+}
+.team-heading{
+background-image: linear-gradient(to right, #28313B, #484561);
+text-align: center;
+padding-top: 20px;
+}
+.team-heading h1{
+  background: -webkit-linear-gradient(#83a4d4, #b6fbff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
 }
