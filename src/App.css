@@ -292,7 +292,7 @@ body {
   position: absolute;
   width: 100%;
   z-index: 8;
-  bottom: calc(200vh + 362.188px);
+  bottom: calc(200vh + 353.188px);
 }
 @media only screen and (max-width: 1800px) {
   .bottom{
@@ -896,4 +896,23 @@ padding-top: 20px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 3rem;
+}
+/* Get in Touch Dertails */ 
+.getinTouchDetails{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.fontsAboutUs{
+  padding-left: 30px;
+  font-size: 30px;
+  padding-bottom: 12px;
+  color: #6495ed;
+}
+.getinTouchDetails h2{
+  font-size: 1.3rem;
+  padding-left: 14px;
+  padding-bottom: 12px;
 }

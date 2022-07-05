@@ -14,6 +14,7 @@ import ScrollTriggerProxy from "./Components/ScrollTriggerProxy";
 import OurSpecilization from "./sections/OurSpecilization";
 import Testomonials from "./sections/Testomonials";
 import AboutCMM from "./Components/AboutCMM";
+import OurServices from "./Components/OurServices";
 
 const App = () => {
   useEffect(() => {
@@ -74,12 +75,14 @@ const App = () => {
         <ScrollTriggerProxy />
         <main data-scroll-container ref={containerRef}>
           {/* ...your app */}
-          {/* <IntroOverlayAnimation />
+          <IntroOverlayAnimation />
           <Header />
           <CoverVdeo />
           <AboutCreative />
-          <Footer /> */}
-          <AboutCMM />
+          <Testomonials />
+          <Footer />
+          {/* <AboutCMM /> */}
+          <OurServices />
         </main>
       </LocomotiveScrollProvider>
     </>

@@ -87,7 +87,7 @@ const AboutCMM = () => {
         </div>
       </div>
       <OurTeam />
-      {/* <GetInTouch /> */}
+      <GetInTouch />
       <Footer />
     </>
   );
