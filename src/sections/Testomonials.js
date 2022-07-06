@@ -37,6 +37,11 @@ const TestomonialsData = [
 const Testomonials = () => {
   return (
     <>
+      <div className="Testomonial-heading">
+        <h1 class="GradientHeading2" style={{ textAlign: "center" }}>
+          Testomonials
+        </h1>
+      </div>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

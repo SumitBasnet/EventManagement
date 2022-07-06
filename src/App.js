@@ -1,28 +1,18 @@
 import React, { useEffect } from "react";
-import AboutCreative from "./sections/AboutCreative";
-import CoverVdeo from "./sections/CoverVdeo";
 import Header from "./Components/Header";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import { useRef } from "react";
-import IntroOverlayAnimation from "./Components/IntroOverlayAnimation";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import AboutUs from "./sections/AboutUs";
 import Footer from "./Components/Footer";
-import ScrollTriggerProxy from "./Components/ScrollTriggerProxy";
-import OurSpecilization from "./sections/OurSpecilization";
-import Testomonials from "./sections/Testomonials";
-import AboutCMM from "./Components/AboutCMM";
-import OurServices from "./Components/OurServices";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Index from "./Components/Index";
 
 const App = () => {
   useEffect(() => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
-
     const tl = gsap.timeline();
-
     tl.from("h2 .line  ", 1.8, {
       x: 1800,
       ease: "power4.out",
@@ -72,17 +62,13 @@ const App = () => {
         }
         containerRef={containerRef}
       >
-        <ScrollTriggerProxy />
         <main data-scroll-container ref={containerRef}>
           {/* ...your app */}
-          <IntroOverlayAnimation />
           <Header />
-          <CoverVdeo />
-          <AboutCreative />
-          <Testomonials />
+          <Index />
           <Footer />
           {/* <AboutCMM /> */}
-          <OurServices />
+          {/* <OurServices /> */}
         </main>
       </LocomotiveScrollProvider>
     </>
