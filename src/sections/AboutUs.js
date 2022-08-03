@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -12,17 +13,19 @@ const AboutUs = () => {
             <div className="about-content-inner">
               <h1>
                 <div className="about-content-line">
-                  <div className="about-content-line-innner GradientHeading">
-                    About{" "}
+                  <div
+                    className="about-content-line-innner GradientHeading"
+                    style={{
+                      textAlign: "center",
+                      fontFamily: "Dancing Script,cursive",
+                    }}
+                  >
+                    About Us
                   </div>
                 </div>
-                <div className="about-content-line">
-                  <div className="about-content-line-innner GradientHeading">
-                    {" "}
-                    Us{" "}
-                  </div>
-                </div>
+                <div className="about-content-line"></div>
               </h1>
+
               <p>
                 Creative Mind Media & Event Pvt.Ltd. is the perfect choice when
                 having to provide a solution to all your event planning /
@@ -32,27 +35,27 @@ const AboutUs = () => {
                 successful event is directly related to the guest experience.
               </p>
 
-              <div className="btn-more">
-                <button className="explore-more">
-                  Explore
-                  <div className="arrow-right">
-                    <img src="/assets/images/arrow.svg" alt="" />
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="about-images">
-            <div className="about-images-inner">
-              <div className="about-image img1">
-                <img src="/assets/images/Dummy-Aboutus.jpg" alt="" />
-              </div>
-              <div className="about-image img2">
-                <img src="/assets/images/Dummy-Aboutus2.jpg" alt="" />
-              </div>
+              <Link to="/aboutus" style={{ textDecoration: "none" }}>
+                <div className="btn-more">
+                  <button className="explore-more">
+                    Explore
+                    <div className="arrow-right">
+                      <img src="/assets/images/arrow.svg" alt="" />
+                    </div>
+                  </button>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
+      </div>
+      <div className="abt-contentimg">
+        <img
+          src="/assets/images/homepageP1.jpg"
+          alt=""
+          style={{ height: "80%", width: "70%" }}
+          className="indxabtimg"
+        />
       </div>
     </div>
   );

@@ -12,6 +12,8 @@ import {
   faPaperPlane,
   faHome,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+import ScrollTo from "react-scroll-into-view";
 
 const Footer = () => {
   return (
@@ -19,13 +21,14 @@ const Footer = () => {
       <footer>
         <div className="footer-content">
           <div className="footer-section about">
-            <a className="logo"> Creative Mind Media </a>
-            <p style={{ textAlign: "justify" }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              esse, quibusdam consequatur quos, fugit repellendus adipisci
-              cupiditate blanditiis inventore, ut minus est itaque amet commodi
-              molestias distinctio quaerat delectus illum.
-            </p>
+            <a className="logo">
+              <img
+                src="/assets/images/plainlogo.png"
+                alt=""
+                srcset=""
+                style={{ height: "40%", width: "20%" }}
+              />
+            </a>
             <div className="contact">
               <span>
                 <FontAwesomeIcon icon={faHome} className="fas fa-Phone" />
@@ -44,7 +47,7 @@ const Footer = () => {
               </span>
             </div>
             <div className="socials">
-              <a href="https://www.facebook.com/">
+              <a href="https://www.facebook.com/Cmmpvtltd">
                 <FontAwesomeIcon
                   icon={faFacebook}
                   className="fab fa-facebook"
@@ -69,15 +72,15 @@ const Footer = () => {
           <div className="footer-section links">
             <h2>Quick Links</h2>
             <ul>
-              <li>
-                <a href="privacy.html">About Us </a>
-              </li>
-              <li>
-                <a href="terms.html">Our Services</a>
-              </li>
-              <li>
-                <a href="aboutus.html">Our Teams </a>
-              </li>
+              <Link to="/aboutus">
+                <li>About Us</li>
+              </Link>
+              <Link to="/ourservices">
+                <li>Our Services</li>
+              </Link>
+              <Link to="/">
+                <li>Home</li>
+              </Link>
             </ul>
           </div>
           <div className="footer-section contact-form">

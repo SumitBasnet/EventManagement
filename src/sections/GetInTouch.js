@@ -12,7 +12,12 @@ const GetInTouch = () => {
       <div className="container1">
         <h1
           className="GradientHeading"
-          style={{ textAlign: "center", paddingTop: "40px" }}
+          style={{
+            fontSize: "3rem",
+            textAlign: "center",
+            paddingTop: "40px",
+            fontFamily: "Dancing Script, cursive",
+          }}
         >
           Get in touch
         </h1>
@@ -27,7 +32,7 @@ const GetInTouch = () => {
             <h2>Location</h2>
             <p> Baneshwor - 10, Kathmandu </p>
           </div>
-          <div className="Phone Number">
+          <div className="PhoneNumber">
             <FontAwesomeIcon icon={faPhone} className="fontsAboutUs" />
             <h2>Phone</h2>
             <p> +977 9851080013 </p>

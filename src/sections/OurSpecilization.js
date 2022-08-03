@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
+import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutUs = () => {
@@ -13,14 +14,14 @@ const AboutUs = () => {
             <div className="specialization-content-inner">
               <h1>
                 <div className="specialization-content-line">
-                  <div className="specialization-content-line-innner">
-                    Our Specialized
-                  </div>
-                </div>
-                <div className="specialization-content-line">
-                  <div className="specialization-content-line-innner">
-                    {" "}
-                    Services{" "}
+                  <div
+                    className="specialization-content-line-innner GradientHeading"
+                    style={{
+                      textAlign: "center",
+                      fontFamily: "Dancing Script,cursive",
+                    }}
+                  >
+                    Our Specialized Services
                   </div>
                 </div>
               </h1>
@@ -37,24 +38,24 @@ const AboutUs = () => {
                 you stand for.
               </p>
               <div className="btn-more">
-                <button className="explore-more">
-                  Explore
-                  <div className="arrow-right">
-                    <img src="/assets/images/arrow.svg" alt="" />
-                  </div>
-                </button>
+                <Link to="/ourservices" style={{ textDecoration: "none" }}>
+                  <button className="explore-more">
+                    Explore
+                    <div className="arrow-right">
+                      <img src="/assets/images/arrow.svg" alt="" />
+                    </div>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
-          <div className="specialization-images">
-            <div className="specialization-images-inner">
-              <div className="specialization-image img1">
-                <img src="/assets/images/Dummy-Aboutus.jpg" alt="" />
-              </div>
-              <div className="specialization-image img2">
-                <img src="/assets/images/Dummy-Aboutus2.jpg" alt="" />
-              </div>
-            </div>
+          <div className="specilaizedimgs">
+            <img
+              src="\assets\images\stage.jpg"
+              alt="stage"
+              style={{ height: "500px", width: "80%" }}
+              className="specimg"
+            />
           </div>
         </div>
       </div>

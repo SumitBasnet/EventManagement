@@ -23,7 +23,7 @@ const IndexGalleries = () => {
       <div className="gallery-index">
         <h1
           className="GradientHeading"
-          style={{ textAlign: "center", margin: "20px" }}
+          style={{ textAlign: "center", margin: "20px", fontSize: "2.7rem" }}
         >
           Galleries
         </h1>
@@ -42,7 +42,7 @@ const IndexGalleries = () => {
             </Modal>
           ) : null}
         </ModalGateway>
-        <div className="btn-more">
+        {/* <div className="btn-more">
           <button
             className="explore-more"
             style={{ paddingTop: "20px", paddingBottom: "30px" }}
@@ -52,7 +52,7 @@ const IndexGalleries = () => {
               <img src="/assets/images/arrow.svg" alt="" />
             </div>
           </button>
-        </div>
+        </div> */}
       </div>
     </>
   );

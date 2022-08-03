@@ -41,7 +41,7 @@ const OurTeam = () => {
   return (
     <>
       <div className="team-heading">
-        <h1> Our Team </h1>
+        <h1 style={{ fontFamily: "Dancing Script, cursive" }}> Our Team </h1>
       </div>
       <Swiper
         slidesPerView={1}

@@ -38,7 +38,10 @@ const Testomonials = () => {
   return (
     <>
       <div className="Testomonial-heading">
-        <h1 class="GradientHeading2" style={{ textAlign: "center" }}>
+        <h1
+          class="GradientHeading2"
+          style={{ textAlign: "center", fontSize: "2.7rem" }}
+        >
           Testomonials
         </h1>
       </div>

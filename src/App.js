@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
-import Header from "./Components/Header";
-import { LocomotiveScrollProvider } from "react-locomotive-scroll";
-import "locomotive-scroll/dist/locomotive-scroll.css";
 import { useRef } from "react";
 import gsap from "gsap";
-import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Index from "./Components/Index";
-
+import AboutCMM from "./Components/AboutCMM";
+import OurServices from "./Components/OurServices";
+import Header from "./Components/Header";
+import ScrollToTop from "./sections/ScrollToTop";
+import OurTeam from "./sections/OurTeam";
 const App = () => {
   useEffect(() => {
     let vh = window.innerHeight * 0.01;
@@ -45,32 +45,18 @@ const App = () => {
         },
       });
   }, []);
-  const containerRef = useRef(null);
   return (
     <>
-      <LocomotiveScrollProvider
-        options={{
-          smooth: true,
-          // ... all available Locomotive Scroll instance options
-        }}
-        watch={
-          [
-            //..all the dependencies you want to watch to update the scroll.
-            //  Basicaly, you would want to watch page/location changes
-            //  For exemple, on Next.js you would want to watch properties like `router.asPath` (you may want to add more criterias if the instance should be update on locations with query parameters)
-          ]
-        }
-        containerRef={containerRef}
-      >
-        <main data-scroll-container ref={containerRef}>
-          {/* ...your app */}
-          <Header />
-          <Index />
-          <Footer />
-          {/* <AboutCMM /> */}
-          {/* <OurServices /> */}
-        </main>
-      </LocomotiveScrollProvider>
+      <Router>
+        <ScrollToTop />
+        <Header />
+        <Routes>
+          <Route index element={<Index />}></Route>
+          <Route path="/aboutus" element={<AboutCMM />}></Route>
+          <Route path="/ourservices" element={<OurServices />}></Route>
+          <Route path="/teams" element={<OurTeam />}></Route>
+        </Routes>
+      </Router>
     </>
   );
 };

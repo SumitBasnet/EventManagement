@@ -7,10 +7,14 @@ function Banner() {
         <div className="row">
           <h2>
             <div className="line">
-              <span>Creative Mind</span>
+              <span style={{ fontFamily: "Dancing Script,cursive" }}>
+                Creative Mind
+              </span>
             </div>
             <div className="line">
-              <span>Event Org.</span>
+              <span style={{ fontFamily: "Dancing Script,cursive" }}>
+                Event Org.
+              </span>
             </div>
           </h2>
         </div>

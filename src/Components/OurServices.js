@@ -43,8 +43,19 @@ const servicesImages = [
 const OurServices = () => {
   return (
     <>
+      <div className="ourServicesBG">
+        <div class="headtop">
+          <h1>Our Services</h1>
+          <h3>Reasons for Choosing Us</h3>
+          <p className="Slogan">"Think Unlimited, Be Creative"</p>
+          <br />
+        </div>
+      </div>
       <div className="container1">
-        <h1 className="GradientHeading" style={{ textAlign: "center" }}>
+        <h1
+          className="GradientHeading"
+          style={{ textAlign: "center", fontSize: "3rem" }}
+        >
           Our Services
         </h1>
         <div className="cards-list">
@@ -55,7 +66,9 @@ const OurServices = () => {
                   <img src={`/assets/images/ServiceImg/${elm.img}.jpg`} />
                 </div>
                 <div className="card_title">
-                  <h2>{elm.title}</h2>
+                  <h2 style={{ fontFamily: "Dancing Script,cursive" }}>
+                    {elm.title}
+                  </h2>
                 </div>
               </div>
             );
@@ -87,6 +100,7 @@ const OurServices = () => {
               src="/assets/images/PreEvent.jpg"
               alt="ourStory"
               style={{ height: "370px" }}
+              className="Our-serviceImg"
             />
           </div>
         </div>
